@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Interactive Navigation Menu</title>
+  <script src="https://kit.fontawesome.com/3458fa077a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+    <img src="logo.png" class="logo">
+    <ul>
+      <li><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+   </nav>
+  <div class="header-text">
+    <p>Web Developer</p>
+    <h1>Hi, I'm <span>Subash </span>From India</h1> 
+
+  </div>
+  </div>
+  </div>
+/*----about---*/ 
+ <div id="about">
+<div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="Web.jpg" >
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Greetings! I'm Subash,from India is a quick learner with a knack for adapting to diverse situations. 
+         My enthusiasm for embracing new technologies positions me as an agile and resourceful individual, 
+          ready to thrive in dynamic and evolving environments.
+
+        </p> 
+      <div class="tab-titles">
+        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+        <p class="tab-links"              onclick="opentab('Experience')">Experience</p>
+        <p class="tab-links"              onclick="opentab('Education')">Education</p>
+      </div>
+      <div class="tab-contents active-tab" id="Skills" >
+        <ul>
+          <li><span>Web Development</span><br>Web app Development</li>
+          <li><span>Blender</span><br>Animation Development</li>
+          <li><span>Premier Pro</span><br>Video Creation</li>
+          <li><span>Photoshop</span><br>images Creation</li>
+</ul>
+      </div>
+      <div class="tab-contents" id="Experience">
+        <ul>
+          <li><span>2022-Current</span><br>At CIT,chennai</li>
+          <li><span>2022-2023</span><br>At CIT,chennai</li>
+          <li><span>2022-2023</span><br>At CIT,chennai</li>
+          <li><span>2022-2023</span><br>At CIT,chennai</li>
+</ul>
+      </div>
+      <div class="tab-contents" id="Education">
+        <ul>
+          <li><span>2019</span><br>SSLC From AEHS school,Pondicherry</li>
+          <li><span>2021</span><br>HSC From CK school,Cuddalore</li>
+          <li><span>2022</span><br>WEB Developement form UDEMY</li>
+          <li><span>2023</span><br>Video editing from Youtube</li>
+</ul>
+      </div> </div> </div></div></div>
+      <!-----------services------->
+      <div id="services">
+        <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <id class="services-list">
+            <div> 
+              <i class="fa-solid fa-code"></i>
+              <h2 style="color: #b54769;">Web Design</h2>
+              <p> 
+                Passionate intermediate web developer with a flair for seamless 
+                design and functionality.</p>
+               <br>
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-video"></i>
+              <h2 style="color: #b54769;">Video Designer</h2>
+              <p>As an intermediate video designer, I bring creativity to life through compelling visuals and storytelling. 
+                
+                 </p>
+                
+                   <a href="#">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-business-time"></i>
+              <h2 style="color:#b54769;">Business Developer</h2>
+              <p> Intermediate business developer and strategist, blending 
+                analytical prowess with strategic thinking.</p>
+                
+                   <a href="#">Learn more</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-------portfolio----------->
+      <div id="portfolio">
+        <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+            <div class="work">
+              <img  src="video work.jpg" alt="">
+              <div class="layer">
+                <h3 style="color:aliceblue;
+                 text-align:center;">Symposium Advertisement</h3>
+                <p style="color: aliceblue; text-align: center;">The video is Created to let the People know that There was a national level technical symposium 
+                  is going to Happen.
+                </p>
+                <br>
+                <i class="fa-solid fa-link"></i>
+   <br>
+  <br>
+<br>          </div>
+            </div>
+            <div class="work">
+              <img src="web work.jpg" alt="">
+              <div class="layer">
+                <h3 style="color:aliceblue; text-align: center;">Super Market Website</h3>
+              <p style="color: aliceblue; text-align: center;"> This app is make for a Super Market to reach as much as audience possible
+                to grow their business in an exponencial way.
+              </p>
+              <i class="fa-solid fa-link" ></i>
+              </div>
+            </div>
+            <div class="work">
+              <img src="app work.jpg" alt="">
+              <div class="layer">
+                <h3 style="color: aliceblue; text-align: center;"">Ticket Booking app</h3>
+                <p style="color: aliceblue; text-align: center;">This app is created for a theatre to book their tickets 
+                  online.
+                 </p>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+
+          <a href="#" class="btn">See More</a>
+        </div>
+      </div>
+      <!------contact-->
+      <div id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact Me</h1>
+              <p> <i class="fa-regular fa-envelope"></i> subashprasanna66@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> +91 93452 42991</p><br>
+              <div class="social-icons">
+                <a href="https://instagram.com/__._subash__?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/subash-p-b02458249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/subash3650" target="_blank"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <a href="" download class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+              <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email"required>
+                <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">submit</button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="copyright">
+          <p> Copyright © subash. Make with <i class="fa-solid fa-heart"></i> by Pav Tech</p>
+
+  
+
+        </div>
+      </div>
+  
+  <script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){ 
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab")
+ }
+</script>
+
+
+</body>
+</html>
