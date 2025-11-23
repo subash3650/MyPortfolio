@@ -8,14 +8,12 @@ import About from "@/components/About";
 import Certificates from "@/components/Certificates";
 import Footer from "@/components/Footer";
 
+import certificatesData from "@/../../public/data/certificates.json";
+
 // Load certificates from static JSON
 async function getCertificates(): Promise<Certificate[]> {
   try {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/data/certificates.json`,
-      { cache: 'no-store' }
-    );
-    return response.json();
+    return certificatesData as Certificate[];
   } catch (error) {
     console.error('Error loading certificates:', error);
     return [];
