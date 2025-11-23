@@ -8,12 +8,15 @@ import About from "@/components/About";
 import Certificates from "@/components/Certificates";
 import Footer from "@/components/Footer";
 
-import certificatesData from "@/../../public/data/certificates.json";
+import { readFileSync } from 'fs';
+import { join } from 'path';
 
 // Load certificates from static JSON
 async function getCertificates(): Promise<Certificate[]> {
   try {
-    return certificatesData as Certificate[];
+    const filePath = join(process.cwd(), 'public', 'data', 'certificates.json');
+    const fileContents = readFileSync(filePath, 'utf8');
+    return JSON.parse(fileContents) as Certificate[];
   } catch (error) {
     console.error('Error loading certificates:', error);
     return [];
