@@ -1,0 +1,110 @@
+[
+    {
+        "id": "1",
+        "name": "Python",
+        "company": "HackerRank",
+        "description": "Python certification covering data structures and algorithms.",
+        "driveUrl": "https://www.hackerrank.com/certificates/ceb63ac7b817",
+        "issueDate": "Feb 2024",
+        "thumbnailUrl": "/images/certificates/hackerrank.png"
+    },
+    {
+        "id": "2",
+        "name": "CCNA Industrial",
+        "company": "Cisco",
+        "description": "Cisco Certified Network Associate Industrial certification.",
+        "driveUrl": "https://drive.google.com/file/d/1BAMeb6UNBF3iYX88cfJDhhrcK4kMPJcU/view?usp=sharing",
+        "issueDate": "May 2025",
+        "thumbnailUrl": "/images/certificates/cisco.png"
+    },
+    {
+        "id": "3",
+        "name": "CCNA Routing & Switching",
+        "company": "Cisco",
+        "description": "Cisco Certified Network Associate Routing and Switching certification.",
+        "driveUrl": "https://drive.google.com/file/d/1qzxfkjdanNAFxwuQlnwPZ_ltjVvwnbCe/view?usp=sharing",
+        "issueDate": "May 2025",
+        "thumbnailUrl": "/images/certificates/cisco.png"
+    },
+    {
+        "id": "4",
+        "name": "CCNA Security",
+        "company": "Cisco",
+        "description": "Cisco Certified Network Associate Security certification.",
+        "driveUrl": "https://drive.google.com/file/d/1Yoxh2qeXNU0Z4t0SjyWeIuEU6sWT5r5T/view?usp=sharing",
+        "issueDate": "May 2025",
+        "thumbnailUrl": "/images/certificates/cisco.png"
+    },
+    {
+        "id": "5",
+        "name": "CCNA Cyber Ops",
+        "company": "Cisco",
+        "description": "Cisco Certified Network Associate Cyber Ops certification.",
+        "driveUrl": "https://drive.google.com/file/d/1d7NCwR8FOxOx0jhhLEvi2IeYYCihAiEI/view?usp=sharing",
+        "issueDate": "Feb 2025",
+        "thumbnailUrl": "/images/certificates/cisco.png"
+    },
+    {
+        "id": "6",
+        "name": "CyberSecurity Specialist",
+        "company": "Cisco",
+        "description": "Cisco CyberSecurity Specialist certification.",
+        "driveUrl": "https://drive.google.com/file/d/1S7_CBeLWEZ6MWqmB0z0bRI-86uRdP2K0/view?usp=sharing",
+        "issueDate": "Feb 2025",
+        "thumbnailUrl": "/images/certificates/cisco.png"
+    },
+    {
+        "id": "7",
+        "name": "Python Essentials I",
+        "company": "Cisco",
+        "description": "Python Essentials I certification from Cisco.",
+        "driveUrl": "https://drive.google.com/file/d/1GUyZWiyiO1W6J4ZeQ30yNtC6jUVkpiWu/view?usp=sharing",
+        "issueDate": "May 2025",
+        "thumbnailUrl": "/images/certificates/cisco.png"
+    },
+    {
+        "id": "8",
+        "name": "Software Testing",
+        "company": "Great Learning",
+        "description": "Software Testing certification.",
+        "driveUrl": "https://drive.google.com/file/d/1OHoEbTuX-iD9DFo6-XVUAdafaoxNUg4V/view?usp=sharing",
+        "issueDate": "May 2023",
+        "thumbnailUrl": "/images/certificates/greatlearning.png"
+    },
+    {
+        "id": "9",
+        "name": "Cloud Computing",
+        "company": "NPTEL",
+        "description": "Cloud Computing certification.",
+        "driveUrl": "https://drive.google.com/file/d/1awFHQyNHTLiZ8wgwDt3O8d-mPYhdQVTW/view?usp=sharing",
+        "issueDate": "Jul-Oct 2023",
+        "thumbnailUrl": "/images/certificates/nptel.png"
+    },
+    {
+        "id": "10",
+        "name": "MongoDB",
+        "company": "MongoDB",
+        "description": "MongoDB certification.",
+        "driveUrl": "https://drive.google.com/file/d/1jlPEoYRt0IjrSqX23HzSk-TGkx-nSCDk/view?usp=sharing",
+        "issueDate": "Dec 2024",
+        "thumbnailUrl": "/images/certificates/mongodb.png"
+    },
+    {
+        "id": "11",
+        "name": "Java Mastery",
+        "company": "Scaler",
+        "description": "Java Mastery certification.",
+        "driveUrl": "https://drive.google.com/file/d/1pTWYFFGLoXQ6eUA8MmskBg-5rO9HYER0/view?usp=sharing",
+        "issueDate": "Sep 2024",
+        "thumbnailUrl": "/images/certificates/scaler.png"
+    },
+    {
+        "id": "12",
+        "name": "Web Development",
+        "company": "Udemy",
+        "description": "Web Development certification.",
+        "driveUrl": "https://drive.google.com/file/d/1GhoWn1IiwANQP2C1VN5TzHYrMFZ0Omel/view?usp=sharing",
+        "issueDate": "May 2023",
+        "thumbnailUrl": "/images/certificates/udemy.png"
+    }
+]
