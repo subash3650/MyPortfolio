@@ -3,12 +3,22 @@
 import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import { Project } from "@/types";
+import { useState } from "react";
 
 interface PortfolioProps {
     projects: Project[];
 }
 
 const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
+    const [showAll, setShowAll] = useState(false);
+    const INITIAL_DISPLAY_COUNT = 5;
+
+    const displayedProjects = showAll
+        ? projects
+        : projects.slice(0, INITIAL_DISPLAY_COUNT);
+
+    const hasMore = projects.length > INITIAL_DISPLAY_COUNT;
+
     return (
         <section
             id="portfolio"
@@ -37,8 +47,8 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
 
                 {/* Projects Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {projects.length > 0 ? (
-                        projects.map((project, index) => (
+                    {displayedProjects.length > 0 ? (
+                        displayedProjects.map((project, index) => (
                             <ProjectCard key={project.id} project={project} index={index} />
                         ))
                     ) : (
@@ -49,6 +59,26 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
                         </div>
                     )}
                 </div>
+
+                {/* See More Button */}
+                {hasMore && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true }}
+                        className="text-center mt-12"
+                    >
+                        <motion.button
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            onClick={() => setShowAll(!showAll)}
+                            className="px-8 py-3 bg-gradient-to-r from-teal-500 to-teal-600 text-white rounded-full font-semibold hover:shadow-lg hover:shadow-teal-500/50 transition-all duration-300"
+                        >
+                            {showAll ? "Show Less" : `See More (${projects.length - INITIAL_DISPLAY_COUNT} more)`}
+                        </motion.button>
+                    </motion.div>
+                )}
 
                 {/* View More on GitHub */}
                 <motion.div

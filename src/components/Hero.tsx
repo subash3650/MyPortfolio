@@ -65,7 +65,7 @@ const Hero = () => {
                         web products that solve real-world problems.
                     </motion.p>
 
-                    {/* CTA Button */}
+                    {/* CTA Buttons */}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -91,6 +91,17 @@ const Hero = () => {
                                 Learn More
                             </motion.button>
                         </Link>
+
+                        <motion.a
+                            href="https://drive.google.com/uc?export=download&id=1JF5T1IrJsTr9KAfxPIkDRFyr0VtophGY"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                            className="px-8 py-4 border-2 border-teal-500 text-teal-400 rounded-full font-semibold text-lg hover:bg-teal-500 hover:text-white transition-all duration-300"
+                        >
+                            Get My Resume
+                        </motion.a>
                     </motion.div>
                 </motion.div>
 
