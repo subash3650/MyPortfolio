@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className="bg-black border-t border-gray-800">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-                    {/* Brand */}
+
                     <div className="space-y-4">
                         <h3 className="text-2xl font-bold bg-gradient-to-r from-teal-400 to-teal-600 bg-clip-text text-transparent">
                             Subash
@@ -19,7 +19,7 @@ const Footer = () => {
                         </p>
                     </div>
 
-                    {/* Quick Links */}
+
                     <div className="space-y-4">
                         <h4 className="text-white font-semibold">Quick Links</h4>
                         <ul className="space-y-2">
@@ -46,11 +46,11 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Contact & Social */}
+
                     <div className="space-y-4">
                         <h4 className="text-white font-semibold">Connect</h4>
                         <div className="space-y-2 text-sm text-gray-400">
-                            <p>subashprsanna66@gmail.com</p>
+                            <p>subashprasanna66@gmail.com</p>
                             <p>+91 93452 42991</p>
                             <p>Chennai, India</p>
                         </div>
@@ -92,7 +92,7 @@ const Footer = () => {
                                 <SiLeetcode size={20} />
                             </a>
                             <a
-                                href="mailto:subashprsanna66@gmail.com"
+                                href="mailto:subashprasanna66@gmail.com"
                                 className="p-2 bg-gray-800 hover:bg-teal-500 text-gray-300 hover:text-white rounded-lg transition-all"
                                 aria-label="Email"
                             >
@@ -102,7 +102,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Bottom Bar */}
+
                 <div className="mt-8 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-gray-500 text-sm text-center sm:text-left">
                         © {new Date().getFullYear()} Subash. All rights reserved.

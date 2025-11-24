@@ -21,7 +21,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index })
             viewport={{ once: true }}
             className="group relative bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-300"
         >
-            {/* Certificate Thumbnail */}
+
             <div className="relative h-48 bg-gray-800 overflow-hidden">
                 <Image
                     src={certificate.thumbnailUrl || "/images/certificate-placeholder.png"}
@@ -33,7 +33,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index })
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent" />
             </div>
 
-            {/* Content */}
+
             <div className="p-6 space-y-3">
                 <h3 className="text-lg font-bold text-white group-hover:text-teal-400 transition-colors line-clamp-2">
                     {certificate.name}
@@ -49,7 +49,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index })
                 <p className="text-gray-400 text-sm line-clamp-2">
                     {certificate.description}
                 </p>
-                {/* View Certificate Link */}
+
                 <a
                     href={certificate.driveUrl}
                     target="_blank"
@@ -61,7 +61,7 @@ const CertificateCard: React.FC<CertificateCardProps> = ({ certificate, index })
                 </a>
             </div>
 
-            {/* Hover Glow */}
+
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-transparent" />
             </div>

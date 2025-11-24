@@ -12,14 +12,14 @@ export default function UploadCertificate() {
     const [notificationMessage, setNotificationMessage] = useState("");
     const [notificationType, setNotificationType] = useState<"success" | "error">("success");
 
-    // Certificate form state
+
     const [certificateName, setCertificateName] = useState("");
     const [company, setCompany] = useState("");
     const [description, setDescription] = useState("");
     const [driveUrl, setDriveUrl] = useState("");
     const [issueDate, setIssueDate] = useState("");
 
-    // Project form state
+
     const [projectName, setProjectName] = useState("");
     const [githubUrl, setGithubUrl] = useState("");
     const [demoLink, setDemoLink] = useState("");
@@ -45,7 +45,7 @@ export default function UploadCertificate() {
     const handleCertificateSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        // In a real implementation, this would save to a database or update the JSON file
+
         const newCertificate = {
             id: Date.now().toString(),
             name: certificateName,
@@ -58,7 +58,7 @@ export default function UploadCertificate() {
         console.log("New Certificate:", newCertificate);
         showMessage("Certificate added! (Note: This is a demo - data is not persisted)", "success");
 
-        // Reset form
+
         setCertificateName("");
         setCompany("");
         setDescription("");
@@ -79,7 +79,7 @@ export default function UploadCertificate() {
         console.log("New Project:", newProject);
         showMessage("Project added! (Note: Projects are fetched from GitHub automatically)", "success");
 
-        // Reset form
+
         setProjectName("");
         setGithubUrl("");
         setDemoLink("");
@@ -142,7 +142,7 @@ export default function UploadCertificate() {
                     </div>
                 </motion.div>
 
-                {/* Notification */}
+
                 <AnimatePresence>
                     {showNotification && (
                         <motion.div
@@ -150,8 +150,8 @@ export default function UploadCertificate() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -50 }}
                             className={`fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg ${notificationType === "success"
-                                    ? "bg-green-500/90"
-                                    : "bg-red-500/90"
+                                ? "bg-green-500/90"
+                                : "bg-red-500/90"
                                 } text-white`}
                         >
                             {notificationMessage}
@@ -173,7 +173,7 @@ export default function UploadCertificate() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* Certificate Upload Form */}
+
                     <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl border border-gray-800 p-6">
                         <h2 className="text-2xl font-bold text-teal-400 mb-6 flex items-center gap-2">
                             <FiUpload />
@@ -259,7 +259,7 @@ export default function UploadCertificate() {
                         </form>
                     </div>
 
-                    {/* Project Upload Form */}
+
                     <div className="bg-gray-900/50 backdrop-blur-md rounded-2xl border border-gray-800 p-6">
                         <h2 className="text-2xl font-bold text-teal-400 mb-6 flex items-center gap-2">
                             <FiUpload />
@@ -331,7 +331,7 @@ export default function UploadCertificate() {
                     </div>
                 </div>
 
-                {/* Notification */}
+
                 <AnimatePresence>
                     {showNotification && (
                         <motion.div
@@ -339,8 +339,8 @@ export default function UploadCertificate() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -50 }}
                             className={`fixed top-4 right-4 px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 ${notificationType === "success"
-                                    ? "bg-green-500/90"
-                                    : "bg-red-500/90"
+                                ? "bg-green-500/90"
+                                : "bg-red-500/90"
                                 } text-white`}
                         >
                             <span>{notificationMessage}</span>

@@ -25,7 +25,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
             className="relative py-20 md:py-32 bg-gradient-to-b from-black to-gray-900"
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
+
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
                     </p>
                 </motion.div>
 
-                {/* Projects Grid */}
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {displayedProjects.length > 0 ? (
                         displayedProjects.map((project, index) => (
@@ -60,7 +60,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
                     )}
                 </div>
 
-                {/* See More Button */}
+
                 {hasMore && (
                     <motion.div
                         initial={{ opacity: 0 }}
@@ -80,7 +80,7 @@ const Portfolio: React.FC<PortfolioProps> = ({ projects }) => {
                     </motion.div>
                 )}
 
-                {/* View More on GitHub */}
+
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}

@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 import { readFileSync } from 'fs';
 import { join } from 'path';
 
-// Load certificates from static JSON
+
 async function getCertificates(): Promise<Certificate[]> {
   try {
     const filePath = join(process.cwd(), 'public', 'data', 'certificates.json');
@@ -24,7 +24,7 @@ async function getCertificates(): Promise<Certificate[]> {
 }
 
 export default async function Home() {
-  // Fetch data server-side
+
   const [projects, certificates] = await Promise.all([
     fetchProjects(),
     getCertificates(),

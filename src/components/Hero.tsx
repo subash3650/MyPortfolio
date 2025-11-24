@@ -10,7 +10,7 @@ const Hero = () => {
             id="hero"
             className="relative min-h-screen flex items-center justify-center overflow-hidden"
         >
-            {/* Background Image with Parallax Effect */}
+
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/images/hero-crowd.png"
@@ -20,11 +20,11 @@ const Hero = () => {
                     priority
                     quality={90}
                 />
-                {/* Dark Overlay */}
+
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/90" />
             </div>
 
-            {/* Geometric Pattern Overlay */}
+
             <div className="absolute inset-0 z-10 opacity-20">
                 <Image
                     src="/images/geometric-pattern.svg"
@@ -34,7 +34,7 @@ const Hero = () => {
                 />
             </div>
 
-            {/* Hero Content */}
+
             <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -42,7 +42,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="space-y-8"
                 >
-                    {/* Main Heading */}
+
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ const Hero = () => {
                         </span>
                     </motion.h1>
 
-                    {/* Description */}
+
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ const Hero = () => {
                         web products that solve real-world problems.
                     </motion.p>
 
-                    {/* CTA Buttons */}
+
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

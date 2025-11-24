@@ -1,4 +1,4 @@
-// GitHub Repository Type
+
 export interface GitHubRepo {
     id: number;
     name: string;
@@ -16,7 +16,7 @@ export interface GitHubRepo {
     pushed_at: string;
 }
 
-// Project Type (cleaned up repo data)
+
 export interface Project {
     id: number;
     name: string;
@@ -28,7 +28,7 @@ export interface Project {
     language: string;
 }
 
-// Certificate Type
+
 export interface Certificate {
     id: string;
     name: string;
@@ -39,7 +39,7 @@ export interface Certificate {
     thumbnailUrl?: string;
 }
 
-// Service Type
+
 export interface Service {
     id: string;
     title: string;

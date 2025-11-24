@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
             whileHover={{ y: -8 }}
             className="group relative bg-gray-900/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-800 hover:border-teal-500/50 transition-all duration-300"
         >
-            {/* Project Image */}
+
             <div className="relative h-48 sm:h-56 overflow-hidden bg-gray-800">
                 <Image
                     src={project.imageUrl}
@@ -32,19 +32,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60" />
             </div>
 
-            {/* Project Content */}
+
             <div className="p-6 space-y-4">
-                {/* Title */}
+
                 <h3 className="text-xl font-bold text-white group-hover:text-teal-400 transition-colors">
                     {project.name.replace(/-/g, " ").replace(/_/g, " ")}
                 </h3>
 
-                {/* Description */}
+
                 <p className="text-gray-400 text-sm line-clamp-2">
                     {project.description}
                 </p>
 
-                {/* Tech Stack */}
+
                 <div className="flex flex-wrap gap-2">
                     {project.techStack.slice(0, 5).map((tech, idx) => (
                         <span
@@ -56,7 +56,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                     ))}
                 </div>
 
-                {/* Links */}
+
                 <div className="flex items-center gap-4 pt-2">
                     <a
                         href={project.githubUrl}
@@ -82,7 +82,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, index }) => {
                 </div>
             </div>
 
-            {/* Hover Glow Effect */}
+
             <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
                 <div className="absolute inset-0 bg-gradient-to-t from-teal-500/5 to-transparent" />
             </div>

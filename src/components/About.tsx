@@ -14,7 +14,7 @@ const About = () => {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-                    {/* Image Side */}
+
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -29,16 +29,16 @@ const About = () => {
                                 fill
                                 className="object-cover"
                             />
-                            {/* Gradient Overlay */}
+
                             <div className="absolute inset-0 bg-gradient-to-tr from-teal-500/20 to-transparent" />
                         </div>
 
-                        {/* Decorative Elements */}
+
                         <div className="absolute -z-10 top-8 right-8 w-72 h-72 bg-teal-500/20 rounded-full blur-3xl" />
                         <div className="absolute -z-10 bottom-8 left-8 w-60 h-60 bg-teal-600/20 rounded-full blur-3xl" />
                     </motion.div>
 
-                    {/* Content Side */}
+
                     <motion.div
                         initial={{ opacity: 0, x: 30 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -71,7 +71,7 @@ const About = () => {
                             </p>
                         </div>
 
-                        {/* Skills/Specialties */}
+
                         <div className="grid grid-cols-1 gap-4 pt-4">
                             <div className="p-4 bg-gray-800/50 rounded-xl border border-gray-700">
                                 <h4 className="text-teal-400 font-semibold mb-2">Development</h4>
@@ -79,12 +79,12 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* Contact Info */}
+
                         <div className="space-y-3 pt-4">
                             <div className="flex items-center gap-3 text-gray-300">
                                 <FiMail className="text-teal-400" size={20} />
-                                <a href="mailto:subashprsanna66@gmail.com" className="hover:text-teal-400 transition-colors">
-                                    subashprsanna66@gmail.com
+                                <a href="mailto:subashprasanna66@gmail.com" className="hover:text-teal-400 transition-colors">
+                                    subashprasanna66@gmail.com
                                 </a>
                             </div>
                             <div className="flex items-center gap-3 text-gray-300">
@@ -99,7 +99,7 @@ const About = () => {
                             </div>
                         </div>
 
-                        {/* Social Links */}
+
                         <div className="flex items-center gap-4 pt-4">
                             <a
                                 href="https://github.com/subash3650"

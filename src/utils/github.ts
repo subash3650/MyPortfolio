@@ -5,9 +5,7 @@ const GITHUB_API_BASE = 'https://api.github.com';
 
 const GITHUB_USERNAME = 'subash3650';
 
-/**
- * Fetch all repositories for a GitHub user
- */
+
 export async function fetchGitHubRepos(): Promise<GitHubRepo[]> {
     try {
         const response = await axios.get<GitHubRepo[]>(
@@ -90,9 +88,7 @@ const PROJECT_DESCRIPTIONS: Record<string, string> = {
     'RiddleGame': 'Interactive riddle game application built with Java.',
 };
 
-/**
- * Transform GitHub repo data to Project format
- */
+
 export function transformRepoToProject(repo: GitHubRepo): Project {
     return {
         id: repo.id,
@@ -106,24 +102,19 @@ export function transformRepoToProject(repo: GitHubRepo): Project {
     };
 }
 
-/**
- * Generate a placeholder image URL for a project
- * Uses picsum.photos service with project name as seed
- */
+
 function generateProjectImage(projectName: string): string {
     const encodedName = encodeURIComponent(projectName.replace(/[-_]/g, ' '));
     return `https://picsum.photos/seed/${encodedName}/600/400`;
 }
 
-/**
- * Fetch and transform all projects
- */
+
 export async function fetchProjects(): Promise<Project[]> {
     const repos = await fetchGitHubRepos();
 
-    // Filter out forks and archived repos
+
     const activeRepos = repos.filter((repo) => !repo.fork);
 
-    // Transform to Project format
+
     return activeRepos.map(transformRepoToProject);
 }

@@ -43,7 +43,7 @@ const Services = () => {
             className="relative py-20 md:py-32 bg-black"
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Section Header */}
+
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -62,7 +62,7 @@ const Services = () => {
                     </p>
                 </motion.div>
 
-                {/* Services Grid */}
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => {
                         const Icon = service.icon;
@@ -76,14 +76,14 @@ const Services = () => {
                                 whileHover={{ y: -5 }}
                                 className="group relative p-8 bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl border border-gray-800 hover:border-teal-500/50 transition-all duration-300"
                             >
-                                {/* Icon */}
+
                                 <div className="mb-6">
                                     <div className="w-16 h-16 rounded-2xl bg-teal-500/10 flex items-center justify-center group-hover:bg-teal-500/20 transition-colors">
                                         <Icon className="text-teal-400 text-3xl" />
                                     </div>
                                 </div>
 
-                                {/* Content */}
+
                                 <h3 className="text-xl font-bold text-white mb-3 group-hover:text-teal-400 transition-colors">
                                     {service.title}
                                 </h3>
@@ -91,7 +91,7 @@ const Services = () => {
                                     {service.description}
                                 </p>
 
-                                {/* Hover Glow */}
+
                                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl">
                                     <div className="absolute inset-0 bg-gradient-to-br from-teal-500/5 to-transparent rounded-2xl" />
                                 </div>
